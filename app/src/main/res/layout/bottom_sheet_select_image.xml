@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_corner_top"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_photo"
+        android:textColor="@color/home_user_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/pragatinarrow_regular"
+        android:id="@+id/addPhotoTxt"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addPhotoTxt"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginHorizontal="@dimen/_70sdp">
+       <LinearLayout
+           android:foreground="@drawable/ripple"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:id="@+id/pick_gallery">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/img_box_light"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:tint="@color/icon_tints"
+               android:id="@+id/gallery_icon"
+
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:maxWidth="@dimen/_80sdp"
+               android:maxLines="1"
+               android:text="@string/gallery"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintStart_toEndOf="@id/gallery_icon"
+               android:fontFamily="@font/pragatinarrow_regular"
+               android:textSize="@dimen/_18sdp"
+               android:gravity="center_horizontal"
+               android:textColor="@color/icon_tints"
+               android:id="@+id/gallery_txt"
+               />
+       </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/card_stroke"/>
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:foreground="@drawable/ripple"
+            android:id="@+id/open_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/camera_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tint="@color/icon_tints"
+                android:id="@+id/camera_icon"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="@string/camera"
+                android:maxWidth="@dimen/_80sdp"
+                android:maxLines="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/gallery_icon"
+                android:fontFamily="@font/pragatinarrow_regular"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/icon_tints"
+                android:id="@+id/camera_txt"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_below="@id/buttons"
+        />
+
+</RelativeLayout>

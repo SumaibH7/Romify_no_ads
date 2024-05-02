@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path name="shared_images" path="shared_images/" /> <!-- The directory where you store shared images -->
+    <!-- Add more paths if needed -->
+</paths>

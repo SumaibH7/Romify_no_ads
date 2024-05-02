@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bluell.roomdecoration.interiordesign.ui.fullscreen.PreviewImageFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03"
+        android:orientation="horizontal"
+        android:id="@+id/topguideline"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:id="@+id/start_guide_line"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.97"
+        android:id="@+id/bottom_guide_line"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:id="@+id/end_guide_line"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.085"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:id="@+id/tool"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/back_btn"
+            app:tint="@color/selected_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/home_user_text"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        app:layout_constraintTop_toBottomOf="@id/tool"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/promptTitle"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/_1sdp"
+        app:cardBackgroundColor="@color/dialog_bg"
+        android:id="@+id/imageCard">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageBox">
+
+            <io.supercharge.shimmerlayout.ShimmerLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_animation_duration="2000">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#9B9A9A"
+                    android:id="@+id/dummy"
+                    />
+
+            </io.supercharge.shimmerlayout.ShimmerLayout>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:shapeAppearanceOverlay="@style/customRoundedImageViewGenerated"
+                android:id="@+id/selectedImage"
+                />
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|top"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:background="@drawable/indicator"
+                android:id="@+id/favoritesBtn"
+                android:backgroundTint="@color/setting_circle">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/favorite_light"
+                    android:id="@+id/favorites"
+                    app:tint="@color/home_dark_color" />
+
+            </RelativeLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:id="@+id/minimize_image"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                >
+
+                <View
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/maximize_circle"
+                    android:alpha="0.6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/minimize"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:tint="@color/selected_color" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        android:text="Prompt"
+        app:layout_constraintBottom_toTopOf="@id/prompt"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:id="@+id/promptTitle"
+        android:textColor="@color/home_user_text"
+        android:background="@drawable/prompt_bg_rounded"
+        android:backgroundTint="@color/setting_circle"
+        android:paddingHorizontal="@dimen/_7sdp"
+        android:paddingVertical="@dimen/_3sdp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_12sdp"
+        android:text="@string/inspiration_1"
+        android:id="@+id/prompt"
+        app:layout_constraintBottom_toTopOf="@id/buttonsEdit"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:maxLines="3"
+        android:textColor="@color/home_user_text"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        app:layout_constraintBottom_toTopOf="@id/downloadImage"
+        android:id="@+id/buttonsEdit"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.33"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/setting_circle"
+            android:text="@string/variations"
+            app:icon="@drawable/variations"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/editImage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:iconTint="@color/selected_color"
+            android:maxLines="1"
+            android:lines="1"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/selected_color"
+            android:textSize="@dimen/_13sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/variations"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.33"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_image"
+            app:icon="@drawable/edit_image"
+            app:layout_constraintStart_toEndOf="@id/variations"
+            app:layout_constraintEnd_toStartOf="@id/shareImg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/setting_circle"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            app:iconTint="@color/selected_color"
+            android:maxLines="1"
+            android:lines="1"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/selected_color"
+            android:textSize="@dimen/_13sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/editImage"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.23"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            app:icon="@drawable/share_image"
+            app:layout_constraintStart_toEndOf="@id/editImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/setting_circle"
+            app:iconTint="@color/selected_color"
+            android:maxLines="1"
+            android:lines="1"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/selected_color"
+            android:textSize="@dimen/_13sdp"
+            android:padding="@dimen/_5sdp"
+            android:id="@+id/shareImg"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:text="@string/download"
+        app:layout_constraintBottom_toTopOf="@id/bottom_guide_line"
+        android:fontFamily="@font/pragatinarrow_regular"
+        app:backgroundTint="@color/theme_switch_solor"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:id="@+id/downloadImage"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

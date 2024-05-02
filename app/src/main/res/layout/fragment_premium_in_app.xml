@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bluell.roomdecoration.interiordesign.ui.premium.PremiumInAppFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03"
+        android:orientation="horizontal"
+        android:id="@+id/topguideline"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:id="@+id/start_guide_line"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.97"
+        android:id="@+id/bottom_guide_line"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:id="@+id/end_guide_line"
+        android:orientation="vertical"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:id="@+id/tool"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/back_btn"
+            android:contentDescription="@string/navigate_back"
+            app:tint="@color/back_button_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase_gems"
+            app:layout_constraintStart_toEndOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/home_user_text"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/premiumicon"
+        android:id="@+id/premiumDiamond"
+        app:layout_constraintTop_toBottomOf="@id/tool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_12"
+        android:fontFamily="@font/pragatinarrow_regular"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/home_user_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/premiumDiamond"
+        app:layout_constraintStart_toEndOf="@id/premiumDiamond"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/premiumDiamond"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        app:layout_constraintBottom_toTopOf="@id/nextBtn"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:listitem="@layout/list_item_premium_inapp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/premiumRv"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_35sdp"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_guide_line"
+        app:layout_constraintTop_toBottomOf="@id/premiumRv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:backgroundTint="@color/onboarding_dark_text"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:id="@+id/nextBtn"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

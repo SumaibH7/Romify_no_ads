@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "459232163848",
+    "project_id": "roomify-b8932",
+    "storage_bucket": "roomify-b8932.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459232163848:android:76b737134a56a2df8df9bd",
+        "android_client_info": {
+          "package_name": "com.bluell.roomdecoration.interiordesign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK_jVtYj9Fze1HA5jBCvW8oNYN_ZbzMVE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

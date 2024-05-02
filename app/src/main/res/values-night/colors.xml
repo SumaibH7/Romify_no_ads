@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="icon_selected_color">#5884D8</color>
+    <color name="icon_unselected_color">#E6E6E6</color>
+    <color name="background">#141C23</color>
+    <color name="dialog_bg">#141C23</color>
+    <color name="settings_user_text">#E6E6E6</color>
+
+    <color name="setting_circle">#1F2D41</color>
+    <color name="bottom_nav_bg">#141C23</color>
+    <color name="same">#F2F4F7</color>
+    <color name="bottom_nav_color">#33141C23</color>
+    <color name="bottom_nav_active_indi">#343B42</color>
+
+    <color name="full_screen_icons_bg">#343B42</color>
+
+    <color name="settings_text_color">#999999</color>
+
+    <color name="settings_divider_color">#3E454B</color>
+
+    <color name="dialog_inspire_stroke_color">#33EEEEEE</color>
+
+    <color name="home_user_text">#E6E6E6</color>
+    <color name="bullet_points_color">#BFE6E6E6</color>
+    <color name="home_dark_color">#6281BA</color>
+
+    <color name="room_type_background">#293037</color>
+
+    <color name="room_inner_card_bg">#E6E6E6</color>
+
+    <color name="image_color_filter">#30456D</color>
+
+    <color name="selected_color">#F2F4F7</color>
+
+    <color name="room_text_color">#FDFDFD</color>
+    <color name="back_button_color">#FFFFFF</color>
+    <color name="language_card_color">#3E454B</color>
+
+    <color name="dialog_text_color">#E6E6E6</color>
+    <color name="dialog_stroke_color">#999999</color>
+    <color name="dialog_text_color_camera">#999999</color>
+
+    <color name="premium_stroke_unselected">#3E454B</color>
+
+    <color name="premium_stroke_selected">#6281BA</color>
+
+    <color name="anchor_dialog_color">#30456D</color>
+
+    <color name="icon_tints">#FFFFFF</color>
+
+    <color name="tabs_text_color">#F2F4F7</color>
+    <color name="active_tab_text_color">#F2F4F7</color>
+
+    <color name="card_stroke_color">#EEEEEE</color>
+    <color name="card_stroke_color_dim">#4DEEEEEE</color>
+
+    <color name="generated_actions_text">#999999</color>
+
+    <color name="theme_switch_solor">#30456D</color>
+
+    <color name="track_color">#999999</color>
+
+    <color name="rewards_text_head">#999999</color>
+
+    <color name="text">#FFFFFF</color>
+
+    <color name="edtcolor">#B3DEDEDE</color>
+
+    <color name="transparent">#00FFFFFF</color>
+
+
+</resources>

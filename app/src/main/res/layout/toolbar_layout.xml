@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_35sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/app_icon"
+        android:id="@+id/title_icon"
+        android:layout_marginVertical="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLines="1"
+        android:text="@string/app_name"
+        android:fontFamily="@font/pragatinarrow_regular"
+        android:textSize="@dimen/_18sdp"
+        android:id="@+id/title_name"
+        android:textColor="@color/home_user_text"
+        app:layout_constraintStart_toEndOf="@+id/title_icon"
+        android:gravity="start"
+        app:layout_constraintEnd_toStartOf="@id/settings"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_new"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:id="@+id/settings"
+        app:tint="@color/home_user_text" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="@dimen/_35sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:backgroundTint="@color/image_color_filter"-->
+<!--        app:icon="@drawable/go_pro"-->
+<!--        app:iconTint="@color/white"-->
+<!--        android:text="@string/go_pro"-->
+<!--        android:lines="1"-->
+<!--        android:ellipsize="end"-->
+<!--        android:fontFamily="@font/pragatinarrow_regular"-->
+<!--        android:maxLines="1"-->
+<!--        android:maxWidth="@dimen/_100sdp"-->
+<!--        android:textSize="@dimen/_12sdp"-->
+<!--        app:iconSize="@dimen/_13sdp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:id="@+id/go_pro"-->
+<!--        android:layout_marginVertical="@dimen/_5sdp"-->
+<!--        android:paddingHorizontal="@dimen/_10sdp"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

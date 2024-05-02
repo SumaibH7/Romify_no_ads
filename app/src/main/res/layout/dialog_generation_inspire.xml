@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="@dimen/_10sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_5sdp"
+        >
+
+
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/make_sure_the_room_image_is_well_lit_and_captures_the_entire_space"
+            android:textColor="@color/home_user_text"
+            android:fontFamily="@font/pragatinarrow_regular"
+            app:layout_constraintTop_toBottomOf="@id/progressBar"
+            app:layout_constraintStart_toStartOf="@id/imageCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/imageCard"
+            android:id="@+id/guideTxt"
+            android:textSize="@dimen/_14sdp"
+            />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="@dimen/_10sdp"
+
+            app:strokeColor="@color/card_stroke"
+            android:id="@+id/imageCard"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/splash_bg"
+                app:shapeAppearanceOverlay="@style/customRoundedImageView"
+                android:scaleType="centerCrop"
+                android:id="@+id/genImg"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            app:layout_constraintHeight_percent="0.1"
+            app:layout_constraintTop_toBottomOf="@id/imageCard"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/generatedImages"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.23"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="@dimen/_1sdp"
+                app:strokeColor="@color/dialog_inspire_stroke_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/generatedImage2box"
+                android:id="@+id/generatedImage1box"
+                >
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.23"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="@dimen/_1sdp"
+                app:strokeColor="@color/dialog_inspire_stroke_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/generatedImage1box"
+                app:layout_constraintEnd_toStartOf="@id/generatedImage3box"
+                android:id="@+id/generatedImage2box"
+                >
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.23"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="@dimen/_1sdp"
+                app:strokeColor="@color/dialog_inspire_stroke_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/generatedImage2box"
+                app:layout_constraintEnd_toStartOf="@id/generatedImage4box"
+                android:id="@+id/generatedImage3box"
+                >
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintWidth_percent="0.23"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeWidth="@dimen/_1sdp"
+                app:strokeColor="@color/dialog_inspire_stroke_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/generatedImage3box"
+                android:id="@+id/generatedImage4box"
+                >
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            app:layout_constraintTop_toBottomOf="@id/generatedImages"
+            app:layout_constraintStart_toStartOf="@id/imageCard"
+            app:layout_constraintEnd_toEndOf="@id/imageCard"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_6sdp"
+            android:progressDrawable="@drawable/progress_bg"
+
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:max="100"
+            android:progress="30" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

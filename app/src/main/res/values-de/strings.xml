@@ -1,0 +1,197 @@
+<resources>
+    <string name="app_name">Room Design</string>
+    <string name="home">Startseite</string>
+    <string name="favorites">Favoriten</string>
+    <string name="history">Verlauf</string>
+    <string name="settings">Einstellungen</string>
+
+    <string name="skip">Überspringen</string>
+    <string name="next">Weiter</string>
+    <string name="get_started">Loslegen</string>
+    <string name="enjoy_unlimited_downloads">Unbegrenzte Downloads genießen</string>
+    <string name="unlock_pro_features">Profifunktionen freischalten</string>
+    <string name="go_pro">Pro-Version nutzen</string>
+    <string name="edit_profile">Profil bearbeiten</string>
+    <string name="preferences">Einstellungen</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="share">Teilen</string>
+    <string name="terms_of_use">Nutzungsbedingungen</string>
+    <string name="display_picture">Profilbild</string>
+    <string name="change_name">Namen ändern</string>
+    <string name="language">Sprache</string>
+    <string name="theme">Design</string>
+    <string name="no_history_to_display">Kein Verlauf vorhanden</string>
+    <string name="no_favorites_to_display">Keine Favoriten vorhanden</string>
+    <string name="select_room_type">Zimmertyp auswählen</string>
+    <string name="view_all">Alle anzeigen</string>
+    <string name="add_photo">Foto hinzufügen</string>
+    <string name="select_room_style">Zimmerstil auswählen</string>
+    <string name="select_language">Sprache auswählen</string>
+    <string name="english">Englisch</string>
+    <string name="congratulations">Herzlichen Glückwunsch!</string>
+    <string name="you_are_rewarded_with">Sie wurden belohnt mit</string>
+    <string name="confirm">Bestätigen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="yes">Ja</string>
+    <string name="loading_ad">Anzeige wird geladen</string>
+
+    <string name="instructions">Anweisungen</string>
+    <string name="_3_tap_to_capture_the_photo">3. Tippen Sie, um das Foto aufzunehmen.</string>
+    <string name="_2_align_it_for_right_angles">2. Richten Sie es für rechte Winkel aus.</string>
+    <string name="_1_ensure_good_lighting">1. Stellen Sie eine gute Beleuchtung sicher.</string>
+    <string name="navigate_back">Zurück navigieren</string>
+    <string name="premium_purchase">Premium-Kauf</string>
+    <string name="unlock_unlimited">Unbegrenzten Zugriff freischalten</string>
+    <string name="gems">Edelsteine</string>
+    <string name="ad_free">Werbefrei</string>
+    <string name="experience">Erlebnis</string>
+    <string name="crown">Krone</string>
+    <string name="on_your_profile">auf Ihrem Profil</string>
+    <string name="access_to_detailed">Zugang zu detaillierten</string>
+    <string name="ai_renders">KI-Renderings</string>
+    <string name="discounts_in_future">Rabatte in Zukunft</string>
+    <string name="tools">Werkzeuge</string>
+    <string name="save_60">60% sparen</string>
+    <string name="yearly_subscription">Jährliches Abonnement</string>
+    <string name="monthly_subscription">Monatliches Abonnement</string>
+    <string name="weekly_subscription">Wöchentliches Abonnement</string>
+    <string name="continue_btn">Fortfahren</string>
+    <string name="title_activity_maps">Kartenaktivität</string>
+    <string name="gallery">Galerie</string>
+    <string name="camera">Kamera</string>
+    <string name="retake">Erneut aufnehmen</string>
+    <string name="use_it">Verwenden</string>
+    <string name="generate">Generieren</string>
+    <string name="delete">Löschen</string>
+    <string name="default_notification_channel_id">Jobfortschritt</string>
+    <string name="generated_image">Generiertes Bild</string>
+    <string name="regenerate">Neu generieren</string>
+    <string name="save">Speichern</string>
+    <string name="purchase_gems">Edelsteine kaufen</string>
+    <string name="hello_blank_fragment">Hallo, leeres Fragment</string>
+    <string name="rewards">Belohnungen</string>
+    <string name="claim">Anfordern</string>
+    <string name="watch_ads_videos">Werbeanzeigen / Videos ansehen</string>
+    <string name="get_a_reward_by_completing_your_profile">Erhalten Sie eine Belohnung, indem Sie kurze Anzeigen ansehen</string>
+    <string name="refer_a_friend">Empfehlen Sie einen Freund</string>
+    <string name="get_a_reward_by_referring_roomify_ai_to_friend">Erhalten Sie eine Belohnung, indem Sie Room Design einem Freund empfehlen</string>
+    <string name="daily_reward">Tägliche Belohnung</string>
+    <string name="tap_here_to_get_the_daily_reward">Tippen Sie hier, um die tägliche Belohnung zu erhalten</string>
+    <string name="daily_ad_limit_reached_try_again_tomorrow">Tägliches Anzeigenlimit erreicht. Versuchen Sie es morgen erneut.</string>
+    <string name="welcome">Willkommen</string>
+    <string name="get_the_inspirations">Hol dir die Inspirationen</string>
+    <string name="type_anything">Tippen Sie etwas ein...</string>
+
+    <string name="storage_permission_denied">Speicherberechtigung verweigert</string>
+    <string name="interior">Innenbereich</string>
+    <string name="exterior">Außenbereich</string>
+    <string name="inspire">Inspirieren</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="low">Niedrig</string>
+    <string name="medium">Mittel</string>
+    <string name="high">Hoch</string>
+    <string name="are_you_sure_you_want_to_delete_all">Sind Sie sicher, dass Sie alles löschen möchten?</string>
+    <string name="make_sure_the_room_image_is_well_lit_and_captures_the_entire_space">Stellen Sie sicher, dass das Zimmerbild gut beleuchtet ist und den gesamten Raum erfasst.</string>
+    <string name="dinning_room">Esszimmer</string>
+    <string name="upload_image">Bild hochladen</string>
+    <string name="enter_prompt">Eingabeaufforderung eingeben</string>
+    <string name="watch_ad">Anzeige ansehen</string>
+    <string name="_0_100">0/100</string>
+    <string name="image_detailing">Bilddetails</string>
+    <string name="image_resolution">Bildauflösung</string>
+    <string name="hd">HD</string>
+    <string name="_2k">2K</string>
+    <string name="house_angle">Hauswinkel</string>
+    <string name="front">Vorderseite</string>
+    <string name="back">Rückseite</string>
+    <string name="side">Seite</string>
+    <string name="room_style">Zimmerstil</string>
+    <string name="variations">Varianten</string>
+    <string name="edit_image">Bild bearbeiten</string>
+    <string name="upscale">Hochstufen</string>
+    <string name="upscaled">Hochgestuft</string>
+    <string name="done">Fertig</string>
+    <string name="or_click_on_anything_to_start">Oder klicken Sie auf etwas, um zu beginnen</string>
+    <string name="room_type">Zimmertyp</string>
+    <string name="add_mask">Maske hinzufügen</string>
+    <string name="brush">Pinsel</string>
+    <string name="eraser">Radiergummi</string>
+    <string name="apply_mask">Maske anwenden</string>
+    <string name="tip">Tipp:</string>
+    <string name="popular">Beliebt</string>
+    <string name="customize_your_style">Passen Sie Ihren Stil an</string>
+
+    <!--    Room Types-->
+    <string name="living_room">Wohnzimmer</string>
+    <string name="dining_room">Esszimmer</string>
+    <string name="kitchen">Küche</string>
+    <string name="lounge">Salon</string>
+    <string name="hallway">Flur</string>
+    <string name="study_room">Studierzimmer</string>
+    <string name="office">Büro</string>
+    <string name="attic">Dachboden</string>
+    <string name="gaming">Spielen</string>
+    <string name="toilet">Toilette</string>
+    <string name="bathroom">Badezimmer</string>
+    <string name="restaurant">Restaurant</string>
+
+    <!--    Room Styles-->
+
+    <string name="minimalist">Minimalistisch</string>
+    <string name="tropical">Tropisch</string>
+
+
+    <string name="japanese">Japanisch</string>
+    <string name="halloween">Halloween</string>
+    <string name="farmhouse">Bauernhaus</string>
+    <string name="rustic">Rustikal</string>
+    <string name="cyberpunk">Cyberpunk</string>
+    <string name="industrial">Industriell</string>
+    <string name="bohemian">Bohemian</string>
+    <string name="vintage">Vintage</string>
+    <string name="modern">Modern</string>
+    <string name="zen">Zen</string>
+    <string name="_1000">1000</string>
+    <string name="x_12">X 12</string>
+    <string name="rs_22000">RS 22000</string>
+    <string name="x_2">X 2</string>
+    <string name="x_15">X 15</string>
+    <string name="x_3">X 3</string>
+    <string name="hello">Hallo</string>
+    <string name="uploading_image">Bild wird hochgeladen</string>
+
+    <string name="customize_style">Passen Sie Ihren Stil an</string>
+    <string name="choose_design_preferences">Wählen Sie Designpräferenzen, wählen Sie Ihr Zimmer und Ihren Stil aus, fügen Sie ein Bild Ihres Zimmers hinzu, um Ihren Traum-Innenraum zu personalisieren.</string>
+    <string name="capture_your_space">Fangen Sie Ihren Raum ein</string>
+    <string name="use_camera">Verwenden Sie die Kamera Ihres Geräts, um ein Bild Ihres Raums aufzunehmen. Unsere KI übernimmt den Rest!</string>
+    <string name="ai_powered_designs">KI-gestützte Designs</string>
+    <string name="ai_analysis">Unsere KI analysiert Ihren Raum und erstellt atemberaubende Innenraumdesigns nur für Sie.</string>
+
+    <string name="inspiration_1">Stellen Sie sich einen Loft-Raum vor mit freigelegten Ziegelwänden, polierten Betonböden und Metallmöbeln für eine urbane Atmosphäre vor. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_2">Gestalten Sie eine gemütliche Stube mit freiliegenden Holzbalken, einem Steinkamin und Ledersesseln für ein raffiniertes, aber rustikales Ambiente. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_3">Entwerfen Sie eine Küche im eleganten, minimalistischen Stil und verleihen Sie ihr einen modernen Look. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_4">Entwerfen Sie eine Hausfassade im eleganten, minimalistischen Stil und verleihen Sie ihr einen modernen Look. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_5">Entwerfen Sie ein Badezimmer im eleganten, minimalistischen Stil und verleihen Sie ihm einen modernen Look. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_6">Stellen Sie sich ein ruhiges Schlafzimmer mit einem Plattformbett, Bambusfußböden und weichem Licht vor, das Ruhe und Einfachheit vermittelt. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_7">Sonnendurchflutete Loft-Wohnung mit bodentiefen Fenstern, eleganten Einbaumöbeln, polierten Betonböden, lebhaften Farbakzenten von minimalistischer Kunst und skulpturaler Beleuchtung. (Denken Sie an klare Linien, natürliche Materialien und aufgeräumte Räume.) 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_8">Klares, weißes Bungalowhaus mit geometrischen Akzenten, Flachdach, weitläufigen Glastüren, die zu einem angelegten Innenhof mit einem reflektierenden Pool führen. (Denken Sie an scharfe Winkel, minimale Landschaftsgestaltung und nahtlosen Innen-Außen-Fluss.) 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_9">Offener Wohnbereich mit Nussbaumverkleidung, luxuriösen Samtsofas, skulpturaler Couchtisch, lebhaften Akzentwänden und geometrischen Musterteppichen. (Denken Sie an warme Holztöne, Farbakzente und ikonische Möbelstücke.) 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_10">Gemütliches Wohnzimmer mit knisterndem Kaminfeuer, weichen gestrickten Decken, Schaffellteppichen, Holzmöbeln in hellen Farbtönen und reichlich Kerzen für eine warme Beleuchtung. (Denken Sie an natürliche Materialien, gedämpfte Farben und einen Fokus auf Komfort und Gemütlichkeit.) 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_11">Entwerfen Sie ein Wohnzimmer-Interieur in tropischem Stil mit Hängelicht. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_12">Entwerfen Sie ein Wohnzimmer-Interieur im Zen-Stil mit Hängelicht. 8k, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_13">Entwerfen Sie eine Hausfassade im Bohemian-Stil, filmische Beleuchtung, HDR</string>
+    <string name="inspiration_14">Elaboriertes Lebkuchenhaus mit filigranen architektonischen Details, farbigen Glasfenstern, einer umlaufenden Veranda, die mit Spitzenvorhängen geschmückt ist, und einem gepflegten Rasen mit geschnittenen Hecken. (Denken Sie an opulente Details, reiche Farben und eine Prise gotisches Geheimnis.), filmische Beleuchtung, HDR</string>
+    <string name="inspiration_15">Schlichte, monochrome Farbpalette mit Farbakzenten aus lebendiger Kunst oder markanter Beleuchtung. Klare Linien und aufgeräumte Oberflächen, die Licht und Raum maximieren. Hochtechnologische Geräte nahtlos in die Schränke integriert. Schwebende Regale oder minimalistische offene Regale zur Präsentation. Betonarbeitsplatten für einen Hauch von industrieller Eleganz.</string>
+    <string name="inspiration_16">Entwerfen Sie eine gemütliche tropische Nische mit lebendigen Farben, die Elemente wie Topfpflanzen, warme Beleuchtung und natürliche Texturen integriert. Stellen Sie sich einen kleinen, einladenden Raum vor, der eine entspannte, tropische Atmosphäre ausstrahlt.</string>
+    <string name="inspiration_17">Ein begehbarer Kleiderschrank voller Designerkleidung und kybernetischer Verbesserungen für jeden Anlass.</string>
+    <string name="inspiration_18">Traditionelle Tatami-Matten, die im Kontrast zu neonbeleuchteten Cyberpunk-Kunstwerken und Chromakzenten stehen</string>
+
+    <string name="leaving_so_soon">Schon so früh gehen?</string>
+    <string name="are_you_sure_you_want_to_exit">Möchten Sie wirklich beenden?</string>
+    <string name="preview">Vorschau</string>
+    <string name="download">Herunterladen</string>
+
+    <string name="progressText">Generierung läuft. Bitte haben Sie Geduld. Sie werden benachrichtigt, sobald sie bereit ist. Vielen Dank für Ihre Geduld!</string>
+
+
+</resources>

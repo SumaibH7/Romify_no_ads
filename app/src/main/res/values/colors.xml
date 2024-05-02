@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_p_color">#E6E6E6</color>
+    <color name="dark_background">#141C23</color>
+    <color name="onboarding_dark_text">#052460</color>
+    <color name="indicator_dark">#6280BA</color>
+    <color name="bottom_nav_active_indi">#F2F4F7</color>
+    <color name="prompt_bg">#26052460</color>
+
+    <color name="full_screen_icons_bg">#FFFFFF</color>
+
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <color name="icon_selected_color">#052460</color>
+    <color name="selected_color">#052460</color>
+    <color name="icon_unselected_color">#999999</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="bottom_nav_color">#20BEBEBE</color>
+
+    <color name="dialog_bg">#F2F4F7</color>
+    <color name="settings_user_text">#333333</color>
+    <color name="settings_email_text">#999999</color>
+    <color name="setting_circle">#F2F4F7</color>
+    <color name="same">#F2F4F7</color>
+
+    <color name="tabs_text_color">#333333</color>
+    <color name="active_tab_text_color">#FFFFFF</color>
+
+
+
+    <color name="settings_text_color">#666666</color>
+
+    <color name="settings_divider_color">#EEEEEE</color>
+
+    <color name="home_user_text">#333333</color>
+    <color name="bullet_points_color">#BF333333</color>
+
+    <color name="dialog_inspire_stroke_color">#33333333</color>
+
+    <color name="home_dark_color">#052460</color>
+
+    <color name="room_type_background">#FFFFFF</color>
+    
+    <color name="room_inner_card_bg">#F2F4F7</color>
+
+    <color name="image_color_filter">#052460</color>
+
+    <color name="room_text_color">#052460</color>
+
+    <color name="back_button_color">#222222</color>
+
+    <color name="language_card_color">#EEEEEE</color>
+    <color name="dialog_text_color">#052460</color>
+
+    <color name="dialog_stroke_color">#EEEEEE</color>
+    <color name="dialog_text_color_camera">#052460</color>
+
+    <color name="premium_stroke_unselected">#EEEEEE</color>
+
+    <color name="premium_stroke_selected">#052460</color>
+
+    <color name="anchor_dialog_color">#FFFFFF</color>
+
+    <color name="icon_tints">#052460</color>
+
+    <color name="card_stroke_color">#EEEEEE</color>
+    <color name="card_stroke_color_dim">#EEEEEE</color>
+
+    <color name="generated_actions_text">#052460</color>
+
+    <color name="theme_switch_solor">#052460</color>
+
+    <color name="track_color">#999999</color>
+
+    <color name="rewards_text_head">#BF333333</color>
+
+    <color name="text">#D9333333</color>
+
+    <color name="edtcolor">#B3333333</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="card_stroke">#EEEEEE</color>
+
+
+</resources>

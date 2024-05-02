@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background"
+    app:strokeWidth="@dimen/_1sdp"
+    app:strokeColor="@color/card_stroke_color"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            app:layout_constraintWidth_percent="0.5"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:cardBackgroundColor="#00FFFFFF"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:id="@+id/imageBox"
+            app:strokeColor="@color/language_card_color"
+            app:strokeWidth="@dimen/_1sdp">
+
+            <ImageView
+                android:id="@+id/taken_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_70sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imageBox">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <RadioButton
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    app:layout_constraintEnd_toStartOf="@id/useImage"
+                    android:id="@+id/retake"
+                    android:layout_gravity="center_horizontal"
+                    android:buttonTint="@color/dialog_text_color"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:maxWidth="@dimen/_80sdp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/retake"
+                    android:textColor="@color/dialog_text_color"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textSize="@dimen/_18sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/retake"
+                    app:layout_constraintStart_toStartOf="@id/retake"
+                    app:layout_constraintEnd_toEndOf="@id/retake"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/card_stroke"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentEnd="true">
+                <RadioButton
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:id="@+id/useImage"
+                    android:layout_gravity="center_horizontal"
+                    android:buttonTint="@color/dialog_text_color"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_it"
+                    android:maxWidth="@dimen/_80sdp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/dialog_text_color"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textSize="@dimen/_18sdp"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/useImage"
+                    app:layout_constraintStart_toStartOf="@id/useImage"
+                    app:layout_constraintEnd_toEndOf="@id/useImage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

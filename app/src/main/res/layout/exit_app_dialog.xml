@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="@dimen/_24sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginVertical="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/leaving_so_soon"
+            android:fontFamily="@font/pragatinarrow_bold"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/home_user_text"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/are_you_sure_you_want_to_exit"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/home_user_text"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/_90sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pragatinarrow_regular"
+                android:textSize="@dimen/_13sdp"
+                app:backgroundTint="#333333"
+                android:id="@+id/exitApp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelDialog"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:minWidth="@dimen/_90sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pragatinarrow_regular"
+                android:text="@string/cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp"
+                app:backgroundTint="@color/card_stroke" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

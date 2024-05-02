@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bluell.roomdecoration.interiordesign.ui.rewards.RewardsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03"
+        android:orientation="horizontal"
+        android:id="@+id/topguideline"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:id="@+id/start_guide_line"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.97"
+        android:id="@+id/bottom_guide_line"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:id="@+id/end_guide_line"
+        android:orientation="vertical"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:id="@+id/tool"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/back_btn"
+            android:contentDescription="@string/navigate_back"
+            app:tint="@color/back_button_color" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/premiumicon"
+        android:id="@+id/premiumDiamond"
+        app:layout_constraintTop_toBottomOf="@id/tool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_12"
+        android:fontFamily="@font/pragatinarrow_regular"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/home_user_text"
+        android:textStyle="bold"
+        android:id="@+id/userGems"
+        app:layout_constraintBottom_toBottomOf="@id/premiumDiamond"
+        app:layout_constraintStart_toEndOf="@id/premiumDiamond"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/premiumDiamond"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/tabs"
+        >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tab1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rewards"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/home_dark_color"
+            android:id="@+id/tab1Txt"
+            android:layout_gravity="center"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            app:cardBackgroundColor="@color/home_dark_color"
+            app:cardCornerRadius="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:id="@+id/indicatorTab1"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tab2"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/claim"
+                android:fontFamily="@font/pragatinarrow_regular"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#999999"
+                android:id="@+id/tab2Txt"
+                android:layout_gravity="center"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/home_dark_color"
+                app:cardCornerRadius="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:id="@+id/indicatorTab2"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@id/tabs"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/detailsCOnatiner"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:cardBackgroundColor="@color/background"
+            app:strokeWidth="@dimen/_1sdp"
+            app:strokeColor="@color/language_card_color"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/watchAds"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:cardBackgroundColor="@color/background"
+                    app:strokeWidth="@dimen/_1sdp"
+                    android:id="@+id/adsiconCard"
+                    app:strokeColor="@color/language_card_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/watch_ad"
+                        android:layout_gravity="center"
+                        app:tint="@color/home_dark_color" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/watch_ads_videos"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/rewards_text_head"
+                    app:layout_constraintStart_toEndOf="@id/adsiconCard"
+                    app:layout_constraintBottom_toTopOf="@id/ads_txt_bottom"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/ads_txt_top"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_a_reward_by_completing_your_profile"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textStyle="normal"
+                    android:textColor="#DA999999"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:lineHeight="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/adsiconCard"
+                    app:layout_constraintEnd_toStartOf="@id/watchads_diamond"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/ads_txt_top"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/ads_txt_bottom"
+                    />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/diamond_gems"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/adsGems"
+                    android:id="@+id/watchads_diamond"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/x_2"
+                        android:textColor="@color/text"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/watchads_diamond"
+                        android:id="@+id/adsGems"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:cardBackgroundColor="@color/background"
+            app:strokeWidth="@dimen/_1sdp"
+            app:strokeColor="@color/language_card_color"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/watchAds"
+            android:id="@+id/referToFriends"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:cardBackgroundColor="@color/background"
+                    app:strokeWidth="@dimen/_1sdp"
+                    android:id="@+id/referToFriends_iconCard"
+                    app:strokeColor="@color/language_card_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/refer"
+                        android:layout_gravity="center"
+                        app:tint="@color/home_dark_color" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refer_a_friend"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/rewards_text_head"
+                    app:layout_constraintStart_toEndOf="@id/referToFriends_iconCard"
+                    app:layout_constraintBottom_toTopOf="@id/refer_txt_bottom"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/refer_txt_top"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/get_a_reward_by_referring_roomify_ai_to_friend"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textStyle="normal"
+                    android:textColor="#DA999999"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:lineHeight="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/referToFriends_iconCard"
+                    app:layout_constraintEnd_toStartOf="@id/refer_diamond"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/refer_txt_top"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/refer_txt_bottom"
+                    />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/diamond_gems"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/referGems"
+                    android:id="@+id/refer_diamond"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x_15"
+                    android:textColor="@color/text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/refer_diamond"
+                    android:id="@+id/referGems"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:backgroundTint="@color/onboarding_dark_text"
+            android:text="@string/purchase_gems"
+            android:textColor="@color/white"
+            android:id="@+id/add_photo"
+            />
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintTop_toBottomOf="@id/tabs"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="gone"
+        android:id="@+id/claimsdetailsCOnatiner"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.3"
+            app:cardBackgroundColor="@color/background"
+            app:strokeWidth="@dimen/_1sdp"
+            app:strokeColor="@color/language_card_color"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/dailyGems"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintWidth_percent="0.3"
+                    app:cardBackgroundColor="@color/background"
+                    app:strokeWidth="@dimen/_1sdp"
+                    android:id="@+id/dailyGems_iconCard"
+                    app:strokeColor="@color/language_card_color"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/dailyreward"
+                        android:layout_gravity="center"
+                        app:tint="@color/home_dark_color" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_reward"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/rewards_text_head"
+                    app:layout_constraintStart_toEndOf="@id/dailyGems_iconCard"
+                    app:layout_constraintBottom_toTopOf="@id/dailyGems_txt_bottom"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/_14sdp"
+                    android:id="@+id/dailyGems_txt_top"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_here_to_get_the_daily_reward"
+                    android:fontFamily="@font/pragatinarrow_regular"
+                    android:textStyle="normal"
+                    android:textColor="#DA999999"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:lineHeight="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/dailyGems_iconCard"
+                    app:layout_constraintEnd_toStartOf="@id/dailyGems_diamond"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:layout_constraintTop_toBottomOf="@id/dailyGems_txt_top"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/dailyGems_txt_bottom"
+                    />
+
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/diamond_gems"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/dailyGemsvalue"
+                    android:id="@+id/dailyGems_diamond"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x_3"
+                    android:textColor="@color/text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="@id/dailyGems_diamond"
+                    android:id="@+id/dailyGemsvalue"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:textSize="@dimen/_10sdp"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/purchaseGems"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:text="@string/purchase_gems"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/onboarding_dark_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dailyGems" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

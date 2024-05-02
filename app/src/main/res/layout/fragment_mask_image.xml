@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dialog_bg"
+    tools:context="com.bluell.roomdecoration.interiordesign.ui.edit.MaskImageFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.03"
+        android:orientation="horizontal"
+        android:id="@+id/topguideline"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:id="@+id/start_guide_line"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.97"
+        android:id="@+id/bottom_guide_line"
+        android:orientation="horizontal"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.95"
+        android:id="@+id/end_guide_line"
+        android:orientation="vertical"
+        />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background_img"
+        android:scaleType="centerCrop"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool"
+        app:layout_constraintTop_toBottomOf="@id/topguideline"
+        app:layout_constraintStart_toEndOf="@id/start_guide_line"
+        app:layout_constraintEnd_toStartOf="@id/end_guide_line"
+        >
+        <ImageView
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/full_screen_circle"
+            app:tint="@color/selected_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/back_btn" />
+
+        <ImageView
+            android:padding="@dimen/_7sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mask_back"
+            android:background="@drawable/full_screen_circle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/undo_mask"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.75"
+        android:id="@+id/center_guide_line"
+        android:orientation="horizontal"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        app:layout_constraintTop_toBottomOf="@id/tool"
+        app:layout_constraintBottom_toTopOf="@id/center_guide_line"
+        android:id="@+id/actualImgCard"
+        app:cardBackgroundColor="@color/dialog_bg"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/actualImg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:shapeAppearanceOverlay="@style/customRoundedImageView"
+                android:contentDescription="@string/generated_image"
+                />
+
+            <com.bluell.roomdecoration.interiordesign.common.drawing.DrawingView
+                android:id="@+id/drawingView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                app:layout_constraintTop_toTopOf="@id/actualImg"
+                app:layout_constraintBottom_toBottomOf="@id/actualImg"
+                app:layout_constraintStart_toStartOf="@id/actualImg"
+                app:layout_constraintEnd_toEndOf="@id/actualImg"
+                app:radius="@dimen/_10sdp"
+                />
+
+            <ProgressBar
+                android:indeterminateTint="@color/image_color_filter"
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        app:layout_constraintTop_toBottomOf="@id/actualImgCard"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/buttons"
+        android:visibility="gone"
+        >
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.48"
+            android:layout_height="wrap_content"
+            android:text="@string/brush"
+            app:icon="@drawable/mask_brush"
+            android:gravity="start"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:backgroundTint="#00FFFFFF"
+            app:strokeWidth="@dimen/_1sdp"
+            app:layout_constraintEnd_toStartOf="@id/erase_tool"
+            app:strokeColor="@color/selected_color"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/selected_color"
+            android:textSize="@dimen/_13sdp"
+            app:iconTint="@color/selected_color"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:id="@+id/brushToll"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.48"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/eraser"
+            app:icon="@drawable/mask_erase"
+            android:maxLines="1"
+            android:lines="1"
+            app:layout_constraintStart_toEndOf="@id/brushToll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:backgroundTint="#00FFFFFF"
+            app:strokeWidth="@dimen/_1sdp"
+            app:strokeColor="@color/selected_color"
+            app:iconTint="@color/selected_color"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/selected_color"
+            android:textSize="@dimen/_13sdp"
+            android:gravity="start"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:id="@+id/erase_tool"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/start_guide_line"
+        app:layout_constraintEnd_toEndOf="@id/end_guide_line"
+        android:text="@string/apply_mask"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/buttons"
+        android:fontFamily="@font/pragatinarrow_regular"
+        app:backgroundTint="@color/theme_switch_solor"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/white"
+        android:id="@+id/apply_mask"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

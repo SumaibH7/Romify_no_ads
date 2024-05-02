@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            android:adjustViewBounds="true"
+            android:src="@drawable/welcome_1"
+            android:contentDescription="@string/app_name" />
+
+        <View
+            android:layout_below="@id/image"
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            />
+
+        <TextView
+            android:layout_below="@id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome_title"
+            android:text="@string/customize_your_style"
+            style="@style/onboarding_head_text_style"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_below="@id/welcome_title"
+            android:layout_above="@id/get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:gravity="center_horizontal"
+            android:text="Choose design preferences, select your room and style, add picture of your room to personalize your dream interior."
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:lineHeight="@dimen/_20sdp"
+            style="@style/onboarding_des_text_style"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/home_dark_color"
+            android:layout_alignParentBottom="true"
+            android:text="@string/get_started"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:id="@+id/get_started"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

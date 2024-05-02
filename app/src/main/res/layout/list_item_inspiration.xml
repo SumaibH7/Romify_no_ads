@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/room_type_background"
+    app:cardCornerRadius="@dimen/_7sdp"
+    app:strokeWidth="@dimen/_1sdp"
+    app:strokeColor="@color/card_stroke"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/style_image"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inspirations_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/style_image">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Design a cozy tropical-themed nook with vibrant colors, incorporating elements like potted plants, warm lighting, and natural textures. Envision a small, inviting space that radiates a relaxed, tropical atmosphere."
+                android:fontFamily="@font/pragatinarrow_regular"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/room_text_color"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:paddingVertical="@dimen/_10sdp"
+                android:id="@+id/title_text"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

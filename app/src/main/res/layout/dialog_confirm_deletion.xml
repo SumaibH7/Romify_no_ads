@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/close_dummy"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/earned_animation"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@id/earned_animation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/confirm_txt"
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/are_you_sure_you_want_to_delete_all"
+                android:fontFamily="@font/pragatinarrow_regular"
+                android:textColor="@color/dialog_text_color"
+                android:lineHeight="@dimen/_14sdp"
+                android:textSize="@dimen/_14sdp"
+                android:id="@+id/confirmation_txt"
+                app:layout_constraintTop_toBottomOf="@id/confirm_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:backgroundTint="#00FFFFFF"
+            app:strokeColor="@color/dialog_stroke_color"
+            app:strokeWidth="@dimen/_1sdp"
+            android:textColor="@color/dialog_text_color"
+            app:layout_constraintTop_toBottomOf="@id/confirmation_txt"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_7sdp"
+            app:layout_constraintStart_toStartOf="@id/confirmation_txt"
+            app:layout_constraintEnd_toStartOf="@id/confirm_btn"
+            android:id="@+id/cancel_btn"
+            />
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            app:strokeColor="#00EEEEEE"
+            app:strokeWidth="@dimen/_1sdp"
+            android:backgroundTint="@color/image_color_filter"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/confirmation_txt"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_7sdp"
+            app:layout_constraintEnd_toEndOf="@id/confirmation_txt"
+            app:layout_constraintStart_toEndOf="@id/cancel_btn"
+            android:id="@+id/confirm_btn"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

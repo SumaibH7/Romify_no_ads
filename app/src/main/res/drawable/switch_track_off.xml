@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient android:startColor="@color/track_color" android:endColor="@color/track_color" /> <!-- Set your desired solid color here -->
+    <corners android:radius="20dp" /> <!-- Adjust the corner radius as needed -->
+    <size android:height="30dp" android:width="60dp"/>
+</shape>

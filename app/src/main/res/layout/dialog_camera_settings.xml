@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/background"
+    app:strokeWidth="@dimen/_1sdp"
+    app:strokeColor="@color/card_stroke"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:id="@+id/close_dialog"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/close_dialog"
+            app:layout_constraintEnd_toStartOf="@id/close_dialog"
+            android:src="@drawable/camera_dialog_image"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:id="@+id/earned_animation"
+            app:tint="@color/image_color_filter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:fontFamily="@font/pragatinarrow_bold"
+            android:textColor="@color/dialog_text_color"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="@id/close_dialog"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/heading"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1_ensure_good_lighting"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/dialog_text_color_camera"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/heading"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            android:id="@+id/point1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_2_align_it_for_right_angles"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/dialog_text_color_camera"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/point1"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            android:id="@+id/point2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_3_tap_to_capture_the_photo"
+            android:fontFamily="@font/pragatinarrow_regular"
+            android:textColor="@color/dialog_text_color_camera"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/point2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/heading"
+            android:id="@+id/point3"
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

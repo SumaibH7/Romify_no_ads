@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.splash.SplashFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen"
+        app:popUpTo="@id/splashFragment"
+        app:popUpToInclusive="true">
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cameraXFragment"
+            app:destination="@id/cameraXFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_premiumFragment"
+            app:destination="@id/premiumFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_fullScreenFragment"
+            app:destination="@id/fullScreenFragment"
+            app:popUpTo="@id/historyFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_fullScreenFragment"
+            app:destination="@id/fullScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.localization.LanguageFragment"
+        android:label="fragment_language"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/premiumFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.premium.PremiumSubscriptionFragment"
+        android:label="fragment_premium"
+        tools:layout="@layout/fragment_premium" />
+    <fragment
+        android:id="@+id/cameraXFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.home.CameraXFragment"
+        android:label="fragment_camera_x"
+        tools:layout="@layout/fragment_camera_x" />
+    <fragment
+        android:id="@+id/fullScreenFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.fullscreen.FullScreenFragment"
+        android:label="fragment_full_screen"
+        tools:layout="@layout/fragment_full_screen"
+        app:launchSingleTop="true">
+
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fullScreenInspireFragment"
+            app:popUpTo="@+id/fullScreenFragment"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/premiumInAppFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.premium.PremiumInAppFragment"
+        android:label="fragment_premium_in_app"
+        tools:layout="@layout/fragment_premium_in_app" />
+    <fragment
+        android:id="@+id/rewardsFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.rewards.RewardsFragment"
+        android:label="fragment_rewards"
+        tools:layout="@layout/fragment_rewards" />
+    <fragment
+        android:id="@+id/interiorGenerationFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.interior.InteriorGenerationFragment"
+        android:label="fragment_interior_generation"
+        tools:layout="@layout/fragment_interior_generation" />
+    <fragment
+        android:id="@+id/exteriorGenerationFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.exterior.ExteriorGenerationFragment"
+        android:label="fragment_exterior_generation"
+        tools:layout="@layout/fragment_exterior_generation" />
+    <fragment
+        android:id="@+id/inspireFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.inspire.InspireFragment"
+        android:label="fragment_inspire"
+        tools:layout="@layout/fragment_inspire" />
+    <fragment
+        android:id="@+id/fragmentEditDesign"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.edit.FragmentEditDesign"
+        android:label="fragment_edit_design"
+        tools:layout="@layout/fragment_edit_design" />
+    <fragment
+        android:id="@+id/maskImageFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.edit.MaskImageFragment"
+        android:label="fragment_mask_image"
+        tools:layout="@layout/fragment_mask_image" >
+
+        <action
+            android:id="@+id/action_maskImageFragment_to_fragmentEditDesign"
+            app:destination="@id/fragmentEditDesign"
+            app:popUpTo="@id/fullScreenInspireFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fullScreenInspireFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.fullscreen.FullScreenInspireFragment"
+        android:label="fragment_full_screen_inspire"
+        tools:layout="@layout/fragment_full_screen_inspire" >
+
+        <action
+            android:id="@+id/action_your_fragment_to_itself"
+            app:destination="@id/fullScreenInspireFragment"
+            app:popUpTo="@+id/fullScreenInspireFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/previewImageFragment"
+        android:name="com.bluell.roomdecoration.interiordesign.ui.fullscreen.PreviewImageFragment"
+        android:label="fragment_preview_image"
+        tools:layout="@layout/fragment_preview_image" >
+
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentA"
+            app:destination="@id/fullScreenInspireFragment"
+            app:popUpTo="@+id/fullScreenInspireFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+</navigation>
